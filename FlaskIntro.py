@@ -21,9 +21,12 @@ def home():
 def test():
     if request.method == "POST":
         user = request.form["nm"]
-        return redirect(url_for("user", usr=user))
+        model = BalancedRandomForestClassifier(n_estimators=80, random_state=1)
+        nd_pred = d_model.predict(X_test)
+
+        return(print("Classification Report is:\n", classification_report(y_test, nd_pred)))
     else:
-        return render_template(test.html)
+        return (url_for("/"))
 
 
 @ app.route("/database")
