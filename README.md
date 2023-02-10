@@ -57,7 +57,12 @@ Random Forest
 Accuracy = 86%
 Outcomes:  0= No diabetes, 1= prediabetes, 2= diabetes
 
+<img width="412" alt="final_project_accuracy" src="https://user-images.githubusercontent.com/111452227/217992937-c9cc6488-2c6c-4f40-b820-f23452b06e8f.png">
+
+
 ### Charts and Visuals
+
+<img width="393" alt="final_project_heat_map" src="https://user-images.githubusercontent.com/111452227/217992791-795d00aa-5aba-4526-a182-63156919e816.png">
 
 ## Limitations
 
