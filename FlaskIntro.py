@@ -11,14 +11,14 @@ from flask import Flask, jsonify, redirect, url_for, render_template, request
 app = Flask(__name__)
 
 
-@app.route("/")
+@app.route("/", methods=["POST", "GET"])
 def home():
     return ("<h1>Hello Everyone!</h1>")
 
 
-@app.route("/homepage")
+@app.route("/homepage", methods=["POST", "GET"])
 def homepage():
-    return render_template("test.html")
+    return render_template("index.html")
 
 
 @ app.route("/intro")
