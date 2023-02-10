@@ -14,3 +14,22 @@ c.execute('''SELECT * FROM diabetesraw''').fetchall()
 conn.commit()
 # closing the database connection
 conn.close()
+
+
+# engine = create_engine("sqlite:///DNFinal_project.sqlite")
+# Base = automap_base()
+# Base.prepare(engine, reflect=True)
+# Glucose = Base.classes.glucose
+
+# session = Session(engine)
+# results = session.query(Glucose.glucose).all()
+# Glucose = list(np.ravel(results))
+# return jsonify(Glucose=Glucose)
+
+# # conn = sqlite3.connect('DNFinal_Project.db')
+# c = conn.cursor()
+
+# c.execute('''SELECT * FROM diabetes''').fetchall()
+# conn.commit()
+# closing the database connection
+# conn.close()
