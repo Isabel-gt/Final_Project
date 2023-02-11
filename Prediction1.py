@@ -2,7 +2,8 @@ import numpy as np
 import pandas as pd
 from sklearn.preprocessing import StandardScaler, MinMaxScaler
 from sklearn.model_selection import train_test_split
-from imblearn.ensemble import BalancedRandomForestClassifier
+from sklearn.preprocessing import OneHotEncoder
+import tensorflow as tf
 from sklearn import metrics
 import warnings
 import pickle
@@ -16,8 +17,14 @@ y = data['Diabetes_binary'].values
 X = data.drop(['Diabetes_binary'], 1).values
 X_train, X_test, y_train, y_test = train_test_split(X, y, random_state=78)
 
-model = BalancedRandomForestClassifier(n_estimators=80, random_state=1)
-model.fit(X_train, y_train)
+scaler = StandardScaler()
+
+
+X_scaler = scaler.fit(X_train)
+
+
+X_train_scaled = X_scaler.transform(X_train)
+X_test_scaled = X_scaler.transform(X_test)
 
 
 number_input_features = len(X_train[0])
@@ -51,7 +58,7 @@ fit_model = nn.fit(X_train, y_train, epochs=30)
 model_loss, model_accuracy = nn.evaluate(X_test_scaled, y_test, verbose=2)
 
 
-pickle.dump(fit_model, open('model1.pkl', 'wb'))
+pickle.dump(model_accuracy, open('model1.pkl', 'wb'))
 
 
 model1 = pickle.load(open('model1.pkl', 'rb'))
