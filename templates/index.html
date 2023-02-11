@@ -392,12 +392,12 @@
         <!-- To make this form functional, sign up at-->
         <!-- https://startbootstrap.com/solution/contact-forms-->
         <!-- to get an API token!-->
-        <form id="contactForm" data-sb-form-api-token="API_TOKEN">
+        <form action="/test" method="POST">
           <div class="row align-items-stretch mb-5">
             <div class="timeline-panel">
               <div class="timeline-body">
                 <p class="text-muted">
-                  Question 1?
+                  Pregnancies?
                 </p>
               </div>
             </div>
@@ -405,80 +405,93 @@
               <div class="form-group">
                 <!-- Name input-->
                 <input
-                  class="form-control"
+                  class="validate"
                   id="name"
-                  type="text"
-                  placeholder="Your Name *"
-                  data-sb-validations="required"
+                  type="text"                
                 />
-                <div class="invalid-feedback" data-sb-feedback="name:required">
-                  A name is required.
-                </div>
               </div>
               <div class="timeline-panel">
                 <div class="timeline-body">
                   <p class="text-muted">
-                    Question 2?
+                    Glucose?
                   </p>
                 </div>
               </div>
               <div class="form-group">
                 <!-- Name input-->
                 <input
-                  class="form-control"
+                  class="validate"
                   id="name"
-                  type="text"
-                  placeholder="Your Name *"
-                  data-sb-validations="required"
+                  type="text"                
                 />
-                <div class="invalid-feedback" data-sb-feedback="name:required">
-                  A name is required.
-                </div>
               </div>
               <div class="timeline-panel">
                 <div class="timeline-body">
                   <p class="text-muted">
-                    Question 3?
+                    BloodPressure?
                   </p>
                 </div>
               </div>
               <div class="form-group">
                 <!-- Name input-->
                 <input
-                  class="form-control"
+                  class="validate"
                   id="name"
-                  type="text"
-                  placeholder="Your Name *"
-                  data-sb-validations="required"
+                  type="text"                
                 />
-                <div class="invalid-feedback" data-sb-feedback="name:required">
-                  A name is required.
-                </div>
               </div>
               <div class="timeline-panel">
                 <div class="timeline-body">
                   <p class="text-muted">
-                    Question 4?
+                    SkinThickness?
                   </p>
                 </div>
               </div>
               <div class="form-group">
                 <!-- Name input-->
                 <input
-                  class="form-control"
+                  class="validate"
                   id="name"
-                  type="text"
-                  placeholder="Your Name *"
-                  data-sb-validations="required"
+                  type="text"                
                 />
-                <div class="invalid-feedback" data-sb-feedback="name:required">
-                  A name is required.
-                </div>
               </div>
               <div class="timeline-panel">
                 <div class="timeline-body">
                   <p class="text-muted">
-                    Prediabetes prediction
+                    Insulin?
+                  </p>
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="form-group">
+                  <!-- Name input-->
+                  <input
+                    class="validate"
+                    id="name"
+                    type="text"                
+                  />
+                </div>
+                <div class="timeline-panel">
+                  <div class="timeline-body">
+                    <p class="text-muted">
+                      Age?
+                    </p>
+                  </div>
+                </div>
+                <div class="col-md-6">
+                  <div class="form-group">
+                    <!-- Name input-->
+                    <input
+                      class="validate"
+                      id="name"
+                      type="text"                
+                    />
+                  </div>
+                </div>    
+              <div class="timeline-panel">
+                <div class="timeline-body">
+                  <p class="text-muted">
+                    Pre-diabetes prediction
                   </p>
                 </div>
               </div>
@@ -512,7 +525,7 @@
           
           <div class="text-center">
             <button
-              class="btn btn-primary btn-xl text-uppercase disabled"
+              class="btn-large waves-effect waves-light-orange"
               id="submitButton"
               type="submit"
             >
