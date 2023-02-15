@@ -15,24 +15,36 @@ warnings.filterwarnings("ignore")
 
 data = pd.read_csv("diabetes.csv")
 
-y = data['Diabetes_binary'].values
-X = data.drop(['Diabetes_binary'], 1)
-
 data = np.array(data)
 
-
+y = data['Diabetes_binary'].values
+X = data.drop(['Diabetes_binary', 'Age', 'GenHlth',
+               'HighBP',
+               'BMI',
+               'PhysActivity',
+               'PhysHlth',
+               'DiffWalk',
+               'HeartDiseaseorAttack',
+               'Fruits',
+               'Stroke',
+               'AnyHealthcare',
+               'Smoker',
+               'Veggies',
+               'HvyAlcoholConsump',
+               'HighChol'], 1).values
 X_train, X_test, y_train, y_test = train_test_split(X, y, random_state=78)
 
 log_reg = LogisticRegression()
 log_reg.fit(X_train, y_train)
+
 fit_log_reg = log_reg.fit(X_train, y_train)
 
-d_pred = log_reg.predict(X_test)
+d_pred = fit_log_reg.predict(X_test)
 
 #print("Classification Report is:\n",classification_report(y_test,d_pred))
 
 
-pickle.dump(d_pred, open('model.pkl', 'wb'))
+pickle.dump(d_pred, open('modelr.pkl', 'wb'))
 
 
-model = pickle.load(open('model.pkl', 'rb'))
+modelr = pickle.load(open('modelr.pkl', 'rb'))
