@@ -30,7 +30,7 @@ References
 
 ## Introduction
 
-According to the CDC, the number of people who have diabetes in America is the highest it has ever been. People with diabetes have a deficiency in how their body makes or uses insulin.  Insulin is a important hormone that regulates glucose.  Without proper insulin regulation, patients can succumb to serious complications such as heart disease, vision loss, lower-limb amputation and kidney disease.  It is essential that healthcare providers have the tools to screen patients for prediabetes or diabetes.  The predictions can assist clinicians formulate a   In this project, we intend to use supervised machine learning (classification)to predict diabetes, prediabetes or no diabetes. 
+According to the CDC, the number of people who have diabetes in America is the highest it has ever been. People with diabetes have a deficiency in how their body makes or uses insulin.  Insulin is a important hormone that regulates glucose.  Without proper insulin regulation, patients can succomb to serious complications such as heart disease, vision loss, lower-limb amputation and kidney disease.  It is essential that healthcare providers have the tools to screen patients for prediabetes or diabetes.  The predictions can assist clinicians formulate a   In this project, we intend to use supervised machine learning (classification)to predict diabetes, prediabetes or no diabetes. 
 
 ## Method
 
@@ -59,12 +59,9 @@ Smoker
 Physical Activity
 
 
+Some of the questions that we explored were age, health history, physical activity and socioeconomic factors.  The data that we chose did not require extensive clean-up such as dropping NaN or columns therefore we were able to proceed in creating the model.  
 
-Some of the questions that we explored were age, diet, physical activity and health history.  The data that we chose did not require extensive clean-up such as dropping NaN or columns therefore we were able to proceed in creating the model.  
-
-Diab
-
-Before we were able to work with the dataset, we had to label the categories in some of the columns.  For example.  the income column had 8 
+Before we were able to work with the dataset, we had to label the categories in some of the columns.  If you look at the education categories, those were translated from 1-6 to school levels of education; elementary, middle school, high school, and college education.  
 
 It was felt that a supervised machine learning was the best approach to classify and predict diabetes.  We used the tensorflow deep learning module. To compare for accuracy, we used the random forest method for this prediction.  We then began to build the webpage using HTML, Javascript, and Flask. To be continued...
 
@@ -92,7 +89,6 @@ Accuracy = 86%
 Outcomes:  0= No diabetes, 1= prediabetes, 2= diabetes
 
 <img width="506" alt="image" src="https://user-images.githubusercontent.com/111452227/219551735-007f4bda-6a51-419e-8e80-566625b1d918.png">
-
 
 
 ### Charts and Visuals
