@@ -74,9 +74,20 @@ def testr():
         return render_template("index.html", pred='Continue Usual Care.\n Probability of pre-diabetes is {}'.format(result))
 
 
-# @ app.route("/database")
-# def database():
-    # return f"<h1> Main Table </h1>" f"<h2> Feature Table </h2>"P
+def get_db():
+    conn = sqlite3.connect("diabetes3.db")
+    cursor = conn.cursor()
+    cursor.execute("SELECT * FROM diabetesTable3")
+    results = cursor.fetchall()
+    conn.close()
+    return results
+
+@app.route("/database")
+def db():
+    data = get_db()
+
+    return render_template("database.html", all_data=data)
+
 
 
 if __name__ == "__main__":
