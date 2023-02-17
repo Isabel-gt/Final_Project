@@ -34,7 +34,33 @@ According to the CDC, the number of people who have diabetes in America is the h
 
 ## Method
 
-We used the Diabetes Health Indicators Dataset from 2015 provided by Kaggle. The dataset was obtained by surveying hundreds of thousands of Americans for diabetes or prediabetes predictors with The Behavioral Risk Factor Surveillance System (BRFSS).  We decided to explore 14 of the 22 variables for our prediction. Some of the questions that we explored were age, diet, physical activity and health history.  The data that we chose did not require extensive clean-up such as dropping NaN or columns therefore we were able to proceed in creating the model.  
+We used the Diabetes Health Indicators Dataset from 2015 provided by Kaggle. The dataset was obtained by surveying hundreds of thousands of Americans for diabetes or prediabetes predictors with The Behavioral Risk Factor Surveillance System (BRFSS).  We decided to explore 10 of the 22 variables for our prediction. 
+
+Variables:
+
+Education
+
+Age
+
+High BP
+
+Gender
+
+BMI
+
+Cholesterol check
+
+No Doc bc Cost
+
+Stroke
+
+Smoker
+
+Physical Activity
+
+
+
+Some of the questions that we explored were age, diet, physical activity and health history.  The data that we chose did not require extensive clean-up such as dropping NaN or columns therefore we were able to proceed in creating the model.  
 
 Diab
 
@@ -65,12 +91,21 @@ Tableau
 Accuracy = 86%
 Outcomes:  0= No diabetes, 1= prediabetes, 2= diabetes
 
-<img width="412" alt="final_project_accuracy" src="https://user-images.githubusercontent.com/111452227/217992937-c9cc6488-2c6c-4f40-b820-f23452b06e8f.png">
+<img width="506" alt="image" src="https://user-images.githubusercontent.com/111452227/219551735-007f4bda-6a51-419e-8e80-566625b1d918.png">
+
 
 
 ### Charts and Visuals
 
-<img width="393" alt="final_project_heat_map" src="https://user-images.githubusercontent.com/111452227/217992791-795d00aa-5aba-4526-a182-63156919e816.png">
+High Blood Pressure
+
+<img width="622" alt="image" src="https://user-images.githubusercontent.com/111452227/219551777-0a520155-ce31-4c71-a4c2-e4c814d4722a.png">
+
+High Cholesterol
+
+<img width="622" alt="image" src="https://user-images.githubusercontent.com/111452227/219551825-71086f21-017e-458d-a2e2-6b9c06b7df4d.png">
+
+
 
 ## Set backs
 
@@ -92,7 +127,10 @@ Analysis:
 
 ## Futher Analysis
 
-1.
+1. Explore income analysis
+
+<img width="612" alt="image" src="https://user-images.githubusercontent.com/111452227/219551893-af196382-2163-48c5-b83b-474f7c0614ee.png">
+
 2.
 3.
 
