@@ -35,7 +35,7 @@ hidden_nodes_layer3 = 30
 
 
 model = tf.keras.Sequential([
-    tf.keras.layers.Dense(units=hidden_nodes_layer1, activation='relu', input_dim=number_input_features),
+    tf.keras.layers.Dense(units=hidden_nodes_layer1, activation='relu', input_shape=(10,)),
     tf.keras.layers.Dense(units=hidden_nodes_layer2, activation='relu'),
     tf.keras.layers.Dense(units=hidden_nodes_layer3, activation='relu'),
     tf.keras.layers.Dense(units=1, activation="sigmoid")
@@ -43,6 +43,6 @@ model = tf.keras.Sequential([
 
 model.compile(loss="binary_crossentropy", optimizer="adam", metrics=["accuracy"])
 
-model.fit(X_train_scaled, y_train, epochs=10, batch_size=32)
+model.fit(X_train, y_train, epochs=10, batch_size=32)
 
 model.save('my_model')
