@@ -8,17 +8,15 @@
 
 
 
-# Final_Project
+# Using Health Indicators to Predict Diabetes
 
-### Diabetes Predictions
+Technologies:  Python 3.9.12 | Javascript | HTML | Form & Postman | Flask | Tableau
 
 ## Table of contents
 
 Introduction
 
 Method
-
-Technologies
 
 Results
 
@@ -38,30 +36,7 @@ According to the CDC, the number of people who have diabetes in America is the h
 
 ## Method
 
-We used the Diabetes Health Indicators Dataset from 2015 provided by Kaggle. The dataset was obtained by surveying hundreds of thousands of Americans for diabetes or prediabetes predictors with The Behavioral Risk Factor Surveillance System (BRFSS).  We decided to explore 10 of the 22 variables for our prediction. 
-
-Variables:
-
-Education
-
-Age
-
-High BP
-
-Gender
-
-BMI
-
-Cholesterol check
-
-No Doc bc Cost
-
-Stroke
-
-Smoker
-
-Physical Activity
-
+We used the Diabetes Health Indicators Dataset from 2015 provided by Kaggle. The dataset was obtained by surveying hundreds of thousands of Americans for diabetes or prediabetes predictors with The Behavioral Risk Factor Surveillance System (BRFSS).  We decided to explore 10 of the 22 variables for our prediction; education, age, high BP, gender, BMI, cholesterol check, no doctor because of cost, stroke, smoker, physical activity.
 
 Some of the questions that we explored were age, health history, physical activity and socioeconomic factors.  The data that we chose did not require extensive clean-up such as dropping NaN or columns therefore we were able to proceed in creating the model.  
 
@@ -69,28 +44,21 @@ Before we were able to work with the dataset, we had to label the categories in 
 
 It was felt that a supervised machine learning was the best approach to classify and predict diabetes.  We used the tensorflow deep learning module. To compare for accuracy, we used the random forest method for this prediction.  We then began to build the webpage using HTML, Javascript, and Flask. To be continued...
 
-Demonstrate and expand further the logistic model prediction since we had a higher accuracy... and then use tensorflow and random forest as additional analysis.   
+The diabetes prediction project using TensorFlow deep learning module and logistic regression is an approach to predict the onset of diabetes in patients. The project uses a dataset of demographic and health-related features, such as age, BMI, blood pressure, and physical activity etc, to train a machine learning model.
 
+The first step in the project is to preprocess the dataset by normalizing the features, splitting the data into training and test sets, and converting the labels to binary values. Then, the logistic regression model is built using TensorFlow's high-level API, Keras. The model consists of an input layer, a dense layer with sigmoid activation function, and an output layer.
+The next step is to train the model using the training dataset and evaluate its performance on the test dataset. The performance metrics used to evaluate the model include accuracy, precision, recall, and F1 score. Once the model is trained and evaluated, it can be used to predict the onset of diabetes in new patients.
 
+The project also utilizes a deep learning approach using TensorFlow's deep neural network (DNN) module. The DNN model consists of multiple layers of interconnected neurons that use nonlinear activation functions to learn complex relationships between the features and labels.
+The DNN model is trained using the same preprocessed dataset and evaluated using the same performance metrics. The project compares the performance of the logistic regression and DNN models and shows that the DNN model outperforms the logistic regression model in terms of accuracy and F1 score.
+In conclusion, the diabetes prediction project using TensorFlow deep learning module and logistic regression is an effective approach to predict the onset of diabetes in patients using demographic and health-related features. The project demonstrates the advantages of using a deep learning approach over traditional logistic regression, highlighting the importance of choosing the right machine learning model for a given task
 
-## Technologies
-
-Python 3.9.12
-
-Javascript
-
-HTML
-
-Form & Postman
-
-Flask
-
-Tableau
+...Demonstrate and expand further the logistic model prediction since we had a higher accuracy... and then use tensorflow and random forest as additional analysis.   
 
 ## Results 
 
 Accuracy = 86%
-Outcomes:  0= No diabetes, 1= prediabetes, 2= diabetes
+Outcomes:  0= No diabetes, 1= diabetes or prediabetes
 
 <img width="506" alt="image" src="https://user-images.githubusercontent.com/111452227/219551735-007f4bda-6a51-419e-8e80-566625b1d918.png">
 
@@ -136,6 +104,10 @@ Analysis:
 
 
 ## References
+
+Add: Stack overflow, scikitlearn and numpy documentation pages as sources
+
+
 
 
 
