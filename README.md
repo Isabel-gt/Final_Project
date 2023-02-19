@@ -18,7 +18,9 @@ Introduction
 
 Method
 
-Results
+Exploratory Analysis
+
+Results/Model
 
 Set Backs
 
