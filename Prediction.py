@@ -10,29 +10,49 @@ from sklearn import metrics
 import warnings
 import pickle
 import math
+import joblib
 
 warnings.filterwarnings("ignore")
 
 data = pd.read_csv("diabetes.csv")
 
 y = data['Diabetes_binary'].values
-X = data.drop(['Diabetes_binary'], 1)
+X = data.drop(['Diabetes_binary', 'Age', 'GenHlth',
+               'HighBP',
+               'BMI',
+               'PhysActivity',
+               'PhysHlth',
+               'DiffWalk',
+               'HeartDiseaseorAttack',
+               'Fruits',
+               'Stroke',
+               'AnyHealthcare',
+               'Smoker',
+               'Veggies',
+               'HvyAlcoholConsump',
+               'HighChol'], 1).values
 
-data = np.array(data)
-
+X = X.astype('int')
+y = y.astype('int')
 
 X_train, X_test, y_train, y_test = train_test_split(X, y, random_state=78)
-
+print(X_train)
 log_reg = LogisticRegression()
-log_reg.fit(X_train, y_train)
-fit_log_reg = log_reg.fit(X_train, y_train)
+#log_reg.fit(X_train, y_train)
 
+fit_log_reg = log_reg.fit(X_train, y_train)
+intercept = fit_log_reg.intercept_
+coefficient = fit_log_reg.coef_
+new_list = [intercept, coefficient]
+print(new_list)
+print(len(intercept))
+print(len(coefficient))
 d_pred = log_reg.predict(X_test)
 
 #print("Classification Report is:\n",classification_report(y_test,d_pred))
 
 
-pickle.dump(d_pred, open('model.pkl', 'wb'))
+joblib.dump(log_reg, open('model.pkl', 'wb'))
 
 
-model = pickle.load(open('model.pkl', 'rb'))
+model = joblib.load(open('model.pkl', 'rb'))
