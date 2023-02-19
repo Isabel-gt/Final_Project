@@ -275,6 +275,25 @@
     <section class="page-section" id="about">
       <div class="container">
         <div class="text-center">
+          <h2 class="section-heading text-uppercase">Database</h2>
+          <h3 class="section-subheading text-muted">
+              If you would like to find out which database was selected to make the diabetes predictions click the button below.
+          </h3>
+      </div>
+      <form action="/add_database" method="POST">
+        <div class="text-center">
+            <button 
+              class="btn-large waves-effect waves-light-orange"
+              id="database"
+            >
+            <a href="database">Diabetes Database</a>
+            </button>
+        </div>
+      </form>
+    </section>
+    <section class="page-section" id="about">
+      <div class="container">
+        <div class="text-center">
           <h2 class="section-heading text-uppercase">Model Selection</h2>
           <h3 class="section-subheading text-muted">
             This section evaluate which machine learning model provide the best
@@ -365,11 +384,11 @@
           <li class="timeline-inverted">
             <div class="timeline-image">
               <h4>
-                The Winning
+                Logistic
                 <br />
-                Machine Learning
+                Model
                 <br />
-                Model!
+                Testing!
               </h4>
             </div>
           </li>

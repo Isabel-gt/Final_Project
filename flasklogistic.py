@@ -17,6 +17,8 @@ import warnings
 import math
 import pickle
 import joblib
+import sqlite3
+import csv
 from flask import Flask, jsonify, redirect, url_for, render_template, request
 
 app = Flask(__name__)
@@ -47,6 +49,21 @@ def test():
     else:
 
         return "Patient diagnosis is not diabetic. \n" + f"The probability of this diagnosis outcome is {diabetesProbability[0][0]}"
+
+
+@app.route("/database")
+def db():
+    def get_db():
+
+        conn = sqlite3.connect("diabetes3.db")
+        cursor = conn.cursor()
+        cursor.execute("SELECT * FROM diabetesTable3")
+        results = cursor.fetchall()
+        conn.close()
+        return results
+    data = get_db()
+
+    return render_template("database.html", all_data=data)
 
 
 if __name__ == "__main__":
