@@ -28,7 +28,7 @@
       type="text/css"
     />
     <!-- Core theme CSS (includes Bootstrap)-->
-    <link href="/css/styles.css" rel="stylesheet" />
+    <link href="{{ url_for('static', filename= 'css/styles.css')}}" rel="stylesheet" />
   </head>
   <body id="page-top">
     <!-- Navigation-->
@@ -121,7 +121,7 @@
                 </div>
                 <img
                   class="img-fluid"
-                  src="assets/img/portfolio/1.jpg"
+                  src="{{ url_for('static', filename= 'assets/img/portfolio/pie.png')}}"
                   alt="..."
                 />
               </a>
@@ -148,7 +148,7 @@
                 </div>
                 <img
                   class="img-fluid"
-                  src="assets/img/portfolio/2.jpg"
+                  src="{{ url_for('static', filename= 'assets/img/portfolio/bp.png')}}"
                   alt="..."
                 />
               </a>
@@ -175,7 +175,7 @@
                 </div>
                 <img
                   class="img-fluid"
-                  src="assets/img/portfolio/3.jpg"
+                  src="{{ url_for('static', filename= 'assets/img/portfolio/hc.png')}}"
                   alt="..."
                 />
               </a>
@@ -202,7 +202,7 @@
                 </div>
                 <img
                   class="img-fluid"
-                  src="assets/img/portfolio/4.jpg"
+                  src="{{ url_for('static', filename= 'assets/img/portfolio/edu.png')}}"
                   alt="..."
                 />
               </a>
@@ -229,7 +229,7 @@
                 </div>
                 <img
                   class="img-fluid"
-                  src="assets/img/portfolio/5.jpg"
+                  src="{{ url_for('static', filename= 'assets/img/portfolio/income.png')}}"
                   alt="..."
                 />
               </a>
@@ -256,7 +256,7 @@
                 </div>
                 <img
                   class="img-fluid"
-                  src="assets/img/portfolio/6.jpg"
+                  src="{{ url_for('static', filename= 'assets/img/portfolio/age.png')}}"
                   alt="..."
                 />
               </a>
@@ -286,7 +286,7 @@
             <div class="timeline-image">
               <img
                 class="rounded-circle img-fluid"
-                src="assets/img/about/1.jpg"
+                src="{{ url_for('static', filename= 'assets/img/about/1.jpg')}}"
                 alt="..."
               />
             </div>
@@ -306,7 +306,7 @@
             <div class="timeline-image">
               <img
                 class="rounded-circle img-fluid"
-                src="assets/img/about/2.jpg"
+                src="{{ url_for('static', filename= 'assets/img/about/2.jpg')}}"
                 alt="..."
               />
             </div>
@@ -326,7 +326,7 @@
             <div class="timeline-image">
               <img
                 class="rounded-circle img-fluid"
-                src="assets/img/about/3.jpg"
+                src="{{ url_for('static', filename= 'assets/img/about/3.jpg')}}"
                 alt="..."
               />
             </div>
@@ -346,7 +346,7 @@
             <div class="timeline-image">
               <img
                 class="rounded-circle img-fluid"
-                src="assets/img/about/4.jpg"
+                src="{{ url_for('static', filename= 'assets/img/about/4.jpg')}}"
                 alt="..."
               />
             </div>
@@ -398,7 +398,37 @@
               <div class="timeline-panel">
                 <div class="timeline-body">
                   <p class="text-muted">
-                    Pregnancies?
+                    Does the patient have high blood pressure ? (Yes = 1, No = 0)
+                  </p>
+                </div>
+              </div>
+              <div class="form-group">
+                <!-- Name input-->
+                <input
+                  name="validate"
+                  id="name"
+                  type="text"                
+                />
+              </div>
+              <div class="timeline-panel">
+                <div class="timeline-body">
+                  <p class="text-muted">
+                    Does the patient have high cholesterol ? (Yes = 1, No = 0)
+                  </p>
+                </div>
+              </div>
+              <div class="form-group">
+                <!-- Name input-->
+                <input
+                  name="validate"
+                  id="name"
+                  type="text"                
+                />
+              </div>
+              <div class="timeline-panel">
+                <div class="timeline-body">
+                  <p class="text-muted">
+                    Does the patient smoke ? (Yes = 1, No = 0)
                   </p>
                 </div>
               </div>
@@ -413,14 +443,14 @@
               <div class="timeline-panel">
                 <div class="timeline-body">
                   <p class="text-muted">
-                    Glucose?
+                    Has the patient had a stroke? (Yes = 1, No = 0)
                   </p>
                 </div>
               </div>
               <div class="form">
                 <!-- Name input-->
                 <input
-                  name="validate1"
+                  name="validate"
                   id="name"
                   type="text"                
                 />
@@ -428,14 +458,14 @@
               <div class="timeline-panel">
                 <div class="timeline-body">
                   <p class="text-muted">
-                    BloodPressure?
+                    Does the patient exersise regularly? (Yes = 1, No = 0)
                   </p>
                 </div>
               </div>
               <div class="form">
                 <!-- Name input-->
                 <input
-                  name="validate2"
+                  name="validate"
                   id="name"
                   type="text"                
                 />
@@ -443,14 +473,14 @@
               <div class="timeline-panel">
                 <div class="timeline-body">
                   <p class="text-muted">
-                    SkinThickness?
+                    Does the patient lack primary care doctor due to cost? (Yes = 1, No = 0)
                   </p>
                 </div>
               </div>
               <div class="form">
                 <!-- Name input-->
                 <input
-                  name="validate3"
+                  name="validate"
                   id="name"
                   type="text"                
                 />
@@ -458,14 +488,14 @@
               <div class="timeline-panel">
                 <div class="timeline-body">
                   <p class="text-muted">
-                    Insulin?
+                    Is the patient male of female? (male = 1, female = 2)
                   </p>
                 </div>
               </div>
               <div class="form">
                 <!-- Name input-->
                 <input
-                  name="validate4"
+                  name="validate"
                   id="name"
                   type="text"                
                 />
@@ -473,49 +503,56 @@
               <div class="timeline-panel">
                 <div class="timeline-body">
                   <p class="text-muted">
-                    Age?
+                    What is the patient BMI? (Range from 12 to 98)                 
                   </p>
                 </div>
               </div>
-              <div class="form">
-                <!-- Name input-->
-                <input
-                  name="validate5"
-                  id="name"
-                  type="text"                
-                />
+              <div class="col-md-6">
+                <div class="form">
+                  <!-- Name input-->
+                  <input
+                    name="validate"
+                    id="name"
+                    type="text"                
+                  />
                 </div>
-              </div>     
+                <div class="timeline-panel">
+                  <div class="timeline-body">
+                    <p class="text-muted">
+                      What is the patient age? Use reference table for age ranges
+                    </p>
+                  </div>
+                </div>
+                <div class="form">
+                  <!-- Name input-->
+                  <input
+                    name="validate"
+                    id="name"
+                    type="text"                
+                  />
+                </div>
+                <div class="timeline-panel">
+                  <div class="timeline-body">
+                    <p class="text-muted">
+                      What is the patient education level? See chart for reference...
+                    </p>
+                  </div>
+                </div>
+                <div class="col-md-6">
+                  <div class="form">
+                    <!-- Name input-->
+                    <input
+                      name="validate"
+                      id="name"
+                      type="text"                
+                    />
+                  </div>
+                </div>     
               <div class="timeline-panel">
                 <div class="timeline-body">
-                  <p class="text-muted">
-                    Pre-diabetes prediction
-                  </p>
+                
                 </div>
               </div>
-            </div>
-          </div>
-          <!-- Submit success message-->
-          <!---->
-          <!-- This is what your users will see when the form-->
-          <!-- has successfully submitted-->
-          <div class="d-none" id="submitSuccessMessage">
-            <div class="text-center text-white mb-3">
-              <div class="fw-bolder">Form submission successful!</div>
-              To activate this form, sign up at
-              <br />
-              <a href="https://startbootstrap.com/solution/contact-forms"
-                >https://startbootstrap.com/solution/contact-forms</a
-              >
-            </div>
-          </div>
-          <!-- Submit error message-->
-          <!---->
-          <!-- This is what your users will see when there is-->
-          <!-- an error submitting the form-->
-          <div class="d-none" id="submitErrorMessage">
-            <div class="text-center text-danger mb-3">
-              Error sending message!
             </div>
           </div>
           <!-- Submit Button-->
@@ -583,7 +620,7 @@
       <div class="container">
         <div class="row align-items-center">
           <div class="col-lg-4 text-lg-start">
-            Copyright &copy; Data Ninjas 2023
+            Copyright &copy; startbootstrap
           </div>
           <div class="col-lg-4 text-lg-end">
             <a class="link-dark text-decoration-none me-3" href="#!"
@@ -610,11 +647,11 @@
     <!-- Bootstrap core JS-->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
     <!-- Core theme JS-->
-    <script src="js/scripts.js"></script>
+    <script src="{{ url_for('static', filename= 'js/scripts.js')}}"></script>
     <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *-->
     <!-- * *                               SB Forms JS                               * *-->
     <!-- * * Activate your form at https://startbootstrap.com/solution/contact-forms * *-->
     <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *-->
-    <script src="https://cdn.startbootstrap.com/sb-forms-latest.js"></script>
+    
   </body>
 </html>
