@@ -8,7 +8,7 @@ app = Flask(__name__)
 model = tf.keras.models.load_model('my_model')
 
 # define a route for the predict function
-@app.route('/process_data.py', methods=['POST'])
+@app.route('/', methods=['POST'])
 def process_data():
     input1 = request.form['input1']
     input2 = request.form['input2']
@@ -21,12 +21,11 @@ def process_data():
     input9 = request.form['input9']
     input10 = request.form['input10']
     
-    # Do something with the input data here...
-    # This is where you would call your Python model and store the output in variables
+
     
     result1 = model.predict(input_data)
     
-    # Render the output template and pass the result variables as arguments
+   
     return render_template('output.html', result1=result1)
 
 

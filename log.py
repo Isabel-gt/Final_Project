@@ -10,6 +10,7 @@ from sklearn.linear_model import LogisticRegression
 from sklearn.metrics import classification_report,confusion_matrix
 from sklearn.metrics import f1_score, precision_score, recall_score,accuracy_score
 from joblib import dump
+import pickle
 
 file_path = ('diabetes.csv')
 df = pd.read_csv(file_path)
@@ -26,12 +27,7 @@ X_train, X_test, y_train, y_test = train_test_split(X, y, random_state=78)
 
 reg = LogisticRegression(max_iter=1000000)
 
-model_log = reg.fit(X_train,y_train)
+reg.fit(X_train,y_train)
 
-x_new = np.array([0, 1, 1, 0, 1, 0, 1, 0, 0, 1])
-
-x_2d = x_new.reshape(1, -1)
-
-y_pred = model_log.predict(x_2d)
-
-print(y_pred)
+pickle.dump(reg,open('model.pkl','wb'))
+model=pickle.load(open('model.pkl','rb'))
