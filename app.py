@@ -1,10 +1,11 @@
 from flask import Flask,request, render_template
 import pickle
 import numpy as np
+import tensorflow as tf
 
 app = Flask(__name__)
 
-model=pickle.load(open('model.pkl','rb'))
+model =tf.keras.models.load_model('my_model')
 
 
 @app.route('/')
@@ -16,12 +17,15 @@ def hello_world():
 def predict():
     int_features=[int(x) for x in request.form.values()]
     final=[np.array(int_features)]
+    final = np.reshape(final, (1, -1))
+    
     print(int_features)
     print(final)
-    prediction=model.predict_proba(final)
-    output='{0:.{1}f}'.format(prediction[0][1], 2)
+    prediction=model.predict(final)
+    # output = prediction[0]
+    output=prediction[0]
 
-    if output>str(0.5):
+    if output > 0.5:
         return render_template('inputs.html',pred='Your health is in Danger.\nProbability of Diabetes is {}'.format(output))
     else:
         return render_template('inputs.html',pred='You are NOT likely to have Diabetes.\n Probability of Diabetes is {}'.format(output))

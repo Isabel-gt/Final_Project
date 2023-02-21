@@ -7,6 +7,7 @@ from sklearn.decomposition import PCA
 from sklearn.cluster import KMeans
 from sklearn.preprocessing import OneHotEncoder
 import tensorflow as tf
+import pickle
 
 file_path = ('diabetes.csv')
 df = pd.read_csv(file_path)
@@ -45,4 +46,7 @@ model.compile(loss="binary_crossentropy", optimizer="adam", metrics=["accuracy"]
 
 model.fit(X_train, y_train, epochs=10, batch_size=32)
 
-model.save('my_model')
+with open('model2.pkl', 'wb') as f:
+    pickle.dump(model, f)
+with open('model2.pkl', 'rb') as f:
+    model = pickle.load(f)
