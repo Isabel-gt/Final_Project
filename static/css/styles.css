@@ -86,7 +86,7 @@ body {
   text-align: var(--bs-body-text-align);
   background-color: var(--bs-body-bg);
   -webkit-text-size-adjust: 100%;
-  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0.106);
 }
 
 hr {
@@ -217,6 +217,7 @@ small, .small {
 mark, .mark {
   padding: 0.2em;
   background-color: #fcf8e3;
+  
 }
 
 sub,
@@ -606,7 +607,7 @@ progress {
 
 .img-thumbnail {
   padding: 0.25rem;
-  background-color: #fff;
+  background-color: #ffffff19;
   border: 1px solid #dee2e6;
   border-radius: 0.25rem;
   max-width: 100%;
@@ -624,7 +625,7 @@ progress {
 
 .figure-caption {
   font-size: 0.875em;
-  color: #6c757d;
+  color: #f6f8fa;
 }
 
 .container,
@@ -2225,11 +2226,11 @@ progress {
   height: 1.5em;
 }
 .form-control::-moz-placeholder {
-  color: #6c757d;
+  color: #eef2f6;
   opacity: 1;
 }
 .form-control:-ms-input-placeholder {
-  color: #6c757d;
+  color: #f4f7fa;
   opacity: 1;
 }
 .form-control::placeholder {
@@ -7772,7 +7773,7 @@ textarea.form-control-lg {
 
 .text-muted {
   --bs-text-opacity: 1;
-  color: #6c757d !important;
+  color: #f8f9fa !important;
 }
 
 .text-black-50 {
@@ -11301,7 +11302,7 @@ p {
 }
 
 .page-section {
-  padding: 6rem 0;
+  padding: 6rem;
 }
 .page-section h2.section-heading, .page-section .section-heading.h2 {
   font-size: 2.5rem;
@@ -11410,7 +11411,7 @@ header.masthead {
   padding-bottom: 6rem;
   text-align: center;
   color: #fff;
-  background-image: url("../assets/img/header-bg.jpg");
+  background-image: url("../assets/img/Medback.jpeg");
   background-repeat: no-repeat;
   background-attachment: scroll;
   background-position: center center;
@@ -11448,6 +11449,14 @@ header.masthead .masthead-heading {
     line-height: 4.5rem;
     margin-bottom: 4rem;
   }
+}
+section#portfolio {
+  background-color: #212529;
+  background-image: url("../assets/img/Medback.jpeg");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  color: #ced4da
 }
 #portfolio .portfolio-item {
   max-width: 26rem;
@@ -11720,12 +11729,39 @@ header.masthead .masthead-heading {
 
 section#contact {
   background-color: #212529;
-  background-image: url("../assets/img/map-image.png");
+  background-image: url("../assets/img/Medback.jpeg");
   background-repeat: no-repeat;
-  background-position: center;
+  background-position: center center;
+  background-size: cover;
+  color: #ced4da
 }
-section#contact .section-heading {
+section#services {
+  background-color: #212529;
+  background-image: url("../assets/img/Medback.jpeg");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  color: #ced4da
+}
+section#services.section-heading {
   color: #fff;
+
+}
+section#about {
+  background-color: #212529;
+  background-image: url("../assets/img/Medback.jpeg");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  color: #ced4da
+}
+section#team {
+  background-color: #212529;
+  background-image: url("../assets/img/Medback.jpeg");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  color: #f9fafb
 }
 section#contact form#contactForm .form-group {
   margin-bottom: 1.5rem;
@@ -11775,5 +11811,7 @@ section#contact form#contactForm :-ms-input-placeholder {
 .footer {
   text-align: center;
   font-size: 0.9rem;
-  font-family: "Montserrat", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  font-family: "Montserrat", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI moji", "Segoe UI Symbol", "Noto Color Emoji";
+  background-color: #212529;
+  color: #ced4da
 }

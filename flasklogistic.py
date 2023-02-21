@@ -55,16 +55,17 @@ def test():
 def db():
     def get_db():
 
-        conn = sqlite3.connect("diabetes3.db")
+        conn = sqlite3.connect("diabetes.db")
         cursor = conn.cursor()
         cursor.execute("SELECT * FROM diabetesTable3")
         results = cursor.fetchall()
         conn.close()
         return results
+
     data = get_db()
 
     return render_template("database.html", all_data=data)
 
 
 if __name__ == "__main__":
-    app.run(port=5000, debug=True)
+    app.run(port=8000, debug=True)
