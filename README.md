@@ -44,7 +44,23 @@ Some of the questions that we explored were age, health history, physical activi
 
 Before we were able to work with the dataset, we had to label the categories in some of the columns.  If you look at the education categories, those were translated from 1-6 to school levels of education; elementary, middle school, high school, and college education.  
 
-It was felt that a supervised machine learning was the best approach to classify and predict diabetes.  We used the tensorflow deep learning module. To compare for accuracy, we used the random forest method for this prediction.  We then began to build the webpage using HTML, Javascript, and Flask. To be continued...
+It was felt that a supervised machine learning was the best approach to classify and predict diabetes.  We used the tensorflow deep learning module. To compare for accuracy, we used the random forest method for this prediction.  We then began to build the webpage using HTML, Javascript, and Flask. 
+
+ ### Database
+
+During the completion of the Diabetes Prediction project, a goal was to create a database based on a dataset from the website Kaggle. This dataset was        
+downloaded as a CSV file called diabetes.csv. The database was created using Python in two different files. In the first file, an empty table named diabetesTable3 was made using sqlite3. This table contained the features and the target column names. In the second Python file, the data from the diabetes.csv file was loaded into the table, which results in the complete database; this is then stored under the name diabetes3.db. 
+
+### HTML and Flask
+
+Another objective was to build an app route using Flask to access the database. Before creating this route, another team member made a file named index.html that included all the front-end web development. This file has many elements that allow users to see all the general information about the project as well as the visualizations. This HTML file shows text boxes where can fill in their information to determine whether they may or may not have diabetes.
+
+To access the database, a button was included in the index.html file. This button leads to another HTML file called database.html. This file contains a heading called “Database”, as well as another button that takes the user back to the home page. The connection between the database.html and the diabetes3.db database was done in a Python file. In this file Flask was imported, then an app route and a function were made. A few methods were used inside this function such as connect, cursor, execute, and fetch all. Finally, the database was rendered in the database.html using the method render template. 
+
+Finally, one more goal that needed to be reached was to create a third HTML file that would display the results of the diabetes prediction. The HTML file was called test. This ended up being a limitation since this objective was not reached due to the difficulty of connecting the route from the Flask app to the third HTML.
+
+
+### Machine Learning
 
 The diabetes prediction project using TensorFlow deep learning module and logistic regression is an approach to predict the onset of diabetes in patients. The project uses a dataset of demographic and health-related features, such as age, BMI, blood pressure, and physical activity etc, to train a machine learning model.
 
@@ -54,9 +70,7 @@ The next step is to train the model using the training dataset and evaluate its 
 The project also utilizes a deep learning approach using TensorFlow's deep neural network (DNN) module. The DNN model consists of multiple layers of interconnected neurons that use nonlinear activation functions to learn complex relationships between the features and labels.
 The DNN model is trained using the same preprocessed dataset and evaluated using the same performance metrics. The project compares the performance of the logistic regression and DNN models and shows that the DNN model outperforms the logistic regression model in terms of accuracy and F1 score.
 In conclusion, the diabetes prediction project using TensorFlow deep learning module and logistic regression is an effective approach to predict the onset of diabetes in patients using demographic and health-related features. The project demonstrates the advantages of using a deep learning approach over traditional logistic regression, highlighting the importance of choosing the right machine learning model for a given task
-
-...Demonstrate and expand further the logistic model prediction since we had a higher accuracy... and then use tensorflow and random forest as additional analysis.   
-
+  
 ## Results 
 
 Accuracy = 86%
