@@ -1,5 +1,4 @@
 from flask import Flask,request, render_template
-import pickle
 import numpy as np
 import tensorflow as tf
 
@@ -26,9 +25,9 @@ def predict():
     output=prediction[0]
 
     if output > 0.5:
-        return render_template('inputs.html',pred='Your health is in Danger.\nProbability of Diabetes is {}'.format(output))
+        return render_template('inputs.html',pred='Your health is in Danger.\nProbability of Diabetes is {}%'.format(output*100))
     else:
-        return render_template('inputs.html',pred='You are NOT likely to have Diabetes.\n Probability of Diabetes is {}'.format(output))
+        return render_template('inputs.html',pred='You are NOT likely to have Diabetes.\n Probability of Diabetes is {}%'.format(output*100))
 
 
 if __name__ == '__main__':
