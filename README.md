@@ -22,13 +22,13 @@ Exploratory Analysis
 
 Model
 
+Future Considerations
+
 Set Backs
 
 Limitations
 
 Conclusion
-
-Future Considerations
 
 References
 
@@ -85,10 +85,30 @@ Heat Map (10 variables)
 
 ![image](https://user-images.githubusercontent.com/111452227/220793032-5b9c1e38-3add-44fc-95d4-3e1473e868aa.png)
 
+High Blood Pressure, Cholesterol Check, Stroke
 
-High Cholesterol
+<img width="927" alt="HBP_CC_Stroke" src="https://user-images.githubusercontent.com/111452227/220823826-871b2bab-778c-4ad4-a3ad-86f32aa09e28.png">
 
-<img width="622" alt="image" src="https://user-images.githubusercontent.com/111452227/219551825-71086f21-017e-458d-a2e2-6b9c06b7df4d.png">
+No Doctor Visit Due to Cost
+
+<img width="808" alt="github_doctor" src="https://user-images.githubusercontent.com/111452227/220824397-216d7531-7794-47eb-9355-322d3b247278.png">
+
+
+
+## Future Analysis
+
+1. Explore income analysis
+
+<img width="881" alt="github_income" src="https://user-images.githubusercontent.com/111452227/220823544-3d29c5c6-231e-4792-b4c8-9d61fba2fdf3.png">
+
+Heart Disease or Heart Attack
+
+<img width="905" alt="github_hd" src="https://user-images.githubusercontent.com/111452227/220823387-46bfce48-923a-42b3-8c9e-27f7acd0b6c4.png">
+
+Difficulty Walking
+
+![image](https://user-images.githubusercontent.com/111452227/220824169-34114e7c-0e3d-456c-957f-b6c109154d96.png)
+
 
 
 ## Set backs
@@ -122,15 +142,15 @@ We used a deep learning method involving TensorFlow and logistic regression to v
 Data analysis was performed to understand the underlying indicators that lead to developing pre-diabetes or diabetes. 
 Setbacks creating the models, HTML pages, and analysis were addressed through trial and error and with the guidance of teacher assistants.
 
+## Next Steps
 
-## Futher Analysis
+To explore other health indicators such as difficulty walking, nutritional intake such fruits and vegetables. 
 
-1. Explore income analysis
+Additional analysis on heart disease, income, and alcohol consumption.  
 
-<img width="612" alt="image" src="https://user-images.githubusercontent.com/111452227/219551893-af196382-2163-48c5-b83b-474f7c0614ee.png">
+Future use of our deep learning and logistic classification models to triage centers in emergency rooms. 
 
-2.
-3.
+
 
 
 ## References
