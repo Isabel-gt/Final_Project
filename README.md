@@ -10,7 +10,7 @@
 
 # Using Health Indicators to Predict Diabetes
 
-Technologies:  Python 3.9.12 | Javascript | HTML | Form & Postman | Flask | Tableau
+Technologies:  Python 3.9.12 | Javascript | HTML | Form & Postman | Flask | Tableau | Matplotlib |hvplot | SQLite3 | Google Collab
 
 ## Table of contents
 
@@ -91,23 +91,36 @@ High Cholesterol
 <img width="622" alt="image" src="https://user-images.githubusercontent.com/111452227/219551825-71086f21-017e-458d-a2e2-6b9c06b7df4d.png">
 
 
-
 ## Set backs
 
-Connecting Flask with the database. 
+Connecting Flask with the database
 
-We cannot expand on tensorflow (limited knowledge of the functions to make machine model connections with HTML) and random forest 
+Limited knowledge of the functions to make machine model connections with HTML and random forest
+
+Deciding which of the 22 variables had the most significance. 
+
 
 ## Limitations
 
-Greta: Time constraint did not allow to explore the deep learning method and randon forest models because it required in depth exploration on making the comparisons.  
+Time constraint did not allow to explore the deep learning method and random forest models because it required in depth exploration on making the comparisons.
 
-Garima:  Heat map and comparing/correlating the 22 variables. Uncoding the binary code.  
+Heat map and comparing/correlating the 22 variables. 
 
+Uncoding the binary code.
 
-Analysis: 
+Working with several binary variables limited chart functions, i.e., 1 or 0.
+
+Imbalanced sample.  Diabetes sample was a lot less than the No Diabetes sample.
+
 
 ## Conclusions
+
+Our group utilized a variety of technologies to create a diabetes prediction tool for a healthcare setting or individual use. 
+We found that some health indicators have a greater influence in determining whether someone is at risk for diabetes.  
+Developer and teamwork skills were exercised while creating a database and an HTML using Flask.
+We used a deep learning method involving TensorFlow and logistic regression to validate the data and both showed an accuracy score of 86%.  
+Data analysis was performed to understand the underlying indicators that lead to developing pre-diabetes or diabetes. 
+Setbacks creating the models, HTML pages, and analysis were addressed through trial and error and with the guidance of teacher assistants.
 
 
 ## Futher Analysis
@@ -122,7 +135,14 @@ Analysis:
 
 ## References
 
-Add: Stack overflow, scikitlearn and numpy documentation pages as sources
+ GitHub
+ Stack Overflow
+ Scikitlearn
+ Numpy & python documentation
+ Pubmed
+ CDC
+
+
 
 
 
