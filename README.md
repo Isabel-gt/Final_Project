@@ -161,7 +161,7 @@ Working with several binary variables limited chart functions, i.e., 1 or 0.
 Imbalanced sample.  Diabetes sample was a lot less than the No Diabetes sample.
 
 
-## Conclusions
+## Conclusion
 
 Our group utilized a variety of technologies to create a diabetes prediction tool for a healthcare setting or individual use. 
 We found that some health indicators have a greater influence in determining whether someone is at risk for diabetes.  
