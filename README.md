@@ -165,7 +165,7 @@ Imbalanced sample.  Diabetes sample was a lot less than the No Diabetes sample.
 
 Our group utilized a variety of technologies to create a diabetes prediction tool for a healthcare setting or individual use. 
 We found that some health indicators have a greater influence in determining whether someone is at risk for diabetes.  
-Developer and teamwork skills were exercised while creating a database and an HTML using Flask.
+Developer and teamwork skills were demonstrated while creating a database and an HTML using Flask.
 We used a deep learning method involving TensorFlow and logistic regression to validate the data and both showed an accuracy score of 86%.  
 Data analysis was performed to understand the underlying indicators that lead to developing pre-diabetes or diabetes. 
 Setbacks creating the models, HTML pages, and analysis were addressed through trial and error and with the guidance of teacher assistants.
