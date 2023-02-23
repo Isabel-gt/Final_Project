@@ -28,13 +28,17 @@
       type="text/css"
     />
     <!-- Core theme CSS (includes Bootstrap)-->
-    <link href="static/css/style3.css" rel="stylesheet" />
-  </head>
-  <body id="page-top">
-    <section class="page-section" id="about">
+    <link href="{{ url_for('static', filename= 'css/styles.css')}}" rel="stylesheet"/>
+ </head>
+ <body id="page-top">
+    <section class="page-section top" id="about">
         <div class="container">
           <div class="text-center">
             <h2 class="section-heading text-uppercase">Results
+            <h3> {{results}}</h3>
+          </div>
+        </div>
+        <br>
         <form action="/add_database" method="POST">
             <div class="text-center">
                 <button 
@@ -44,10 +48,7 @@
                 <a href="/">Back to home page</a>
                 </button>
             </div>
-        <br>
         </form>
-          </div>
-        </div>
     </section>
     
     
@@ -60,6 +61,5 @@
     <!-- * * Activate your form at https://startbootstrap.com/solution/contact-forms * *-->
     <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *-->
     <script src="https://cdn.startbootstrap.com/sb-forms-latest.js"></script>
-  </body>
-</html>
+ </body>
 </html>

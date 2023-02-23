@@ -44,11 +44,14 @@ def test():
 
     if diabetesPredict[0] == 1:
 
-        return "Patient diagnosis is diabetic. \n" + f"The probability of this diagnosis outcome is {diabetesProbability[0][0]}"
+        results = "Patient diagnosis is diabetic. \n" + \
+            f"The probability of this diagnosis outcome is {diabetesProbability[0][0]}"
 
     else:
 
-        return "Patient diagnosis is not diabetic. \n" + f"The probability of this diagnosis outcome is {diabetesProbability[0][0]}"
+        results = "Patient diagnosis is not diabetic. \n" + \
+            f"The probability of this diagnosis outcome is {diabetesProbability[0][0]}"
+    return render_template("results.html", results=results)
 
 
 @app.route("/database")

@@ -56,7 +56,7 @@
     <!-- Masthead-->
     <header class="masthead">
       <div class="container">
-        <div class="masthead-subheading">Disease Diagnosis Predictions</div>
+        <div class="masthead-subheading">Diabetes Diagnosis Predictions</div>
         <div class="masthead-heading text-uppercase">
           Machine Learning In Medicine
         </div>
@@ -71,7 +71,7 @@
         <div class="text-center">
           <h2 class="section-heading text-uppercase">Introduction</h2>
           <h3 class="section-subheading text-muted">
-            According to the CDC, the number of people who have diabetes in America is the highest it has ever been. People with diabetes have a deficiency in how their body makes or uses insulin. Insulin is a important hormone that regulates glucose. Without proper insulin regulation, patients can succomb to serious complications such as heart disease, vision loss, lower-limb amputation and kidney disease. It is essential that healthcare providers have the tools to screen patients for prediabetes or diabetes. The predictions can assist clinicians formulate a In this project, we intend to use supervised machine learning (classification)to predict diabetes, prediabetes or no diabetes.
+            <h6>Our project focus on using machine learning to pre diagnose patients who might be at risk of diabetes since the disease can lead to serious complications such as heart disease, vision loss, lower-limb amputation and kidney disease. The predictions can assist clinicians formulate a In this project, we intend to use supervised machine learning (classification)to predict diabetes or no diabetes.</h6>
           </h3>
         </div>
         <div class="row text-center">
@@ -115,17 +115,13 @@
                 href="#portfolioModal1"
               >
               <img
-                  class="img-fluid"
-                  src="{{ url_for('static', filename= 'assets/img/portfolio/pie.png')}}"
+                  class="img-fluid top_row"
+                  src="{{ url_for('static', filename= 'assets/img/portfolio/dnd.png')}}"
                   alt="..."
+                  width="400"
+                  
                 />
               </a>
-              <div class="portfolio-caption">
-                <div class="portfolio-caption-heading">Diabetes Pie Chart</div>
-                <div class="portfolio-caption-subheading text-muted">
-                  Illustration
-                </div>
-              </div>
             </div>
           </div>
           <div class="col-lg-4 col-sm-6 mb-4">
@@ -137,17 +133,13 @@
                 href="#portfolioModal2"
               >
               <img
-                  class="img-fluid"
-                  src="{{ url_for('static', filename= 'assets/img/portfolio/bp.png')}}"
+                  class="img-fluid top_row"
+                  src="{{ url_for('static', filename= 'assets/img/portfolio/hbp.png')}}"
                   alt="..."
+                  width="400"
+                  
               />
               </a>
-              <div class="portfolio-caption">
-                <div class="portfolio-caption-heading">Pie Chart</div>
-                <div class="portfolio-caption-subheading text-muted">
-                  Graphics
-                </div>
-              </div>
             </div>
           </div>
           <div class="col-lg-4 col-sm-6 mb-4">
@@ -159,17 +151,13 @@
                 href="#portfolioModal3"
               >
               <img
-                  class="img-fluid"
-                  src="{{ url_for('static', filename= 'assets/img/portfolio/hc.png')}}"
+                  class="img-fluid top_row"
+                  src="{{ url_for('static', filename= 'assets/img/portfolio/hcb.png')}}"
                   alt="..."
+                  width="400"
+                  
               />
               </a>
-              <div class="portfolio-caption">
-                <div class="portfolio-caption-heading">Heatmap</div>
-                <div class="portfolio-caption-subheading text-muted">
-                  Desciption
-                </div>
-              </div>
             </div>
           </div>
           <div class="col-lg-4 col-sm-6 mb-4 mb-lg-0">
@@ -181,17 +169,13 @@
                 href="#portfolioModal4"
               >
               <img
-                class="img-fluid"
-                src="{{ url_for('static', filename= 'assets/img/portfolio/edu.png')}}"
-                alt="..."
+                  class="img-fluid middle_row"
+                  src="{{ url_for('static', filename= 'assets/img/portfolio/heat10.png')}}"
+                  alt="..."
+                  width="400"
+                  
               />
               </a>
-              <div class="portfolio-caption">
-                <div class="portfolio-caption-heading">Bubble Chart</div>
-                <div class="portfolio-caption-subheading text-muted">
-                  Perspective
-                </div>
-              </div>
             </div>
           </div>
           <div class="col-lg-4 col-sm-6 mb-4 mb-sm-0">
@@ -203,17 +187,13 @@
                 href="#portfolioModal5"
               >
               <img
-                  class="img-fluid"
-                  src="{{ url_for('static', filename= 'assets/img/portfolio/income.png')}}"
+                  class="img-fluid middle_row"
+                  src="{{ url_for('static', filename= 'assets/img/portfolio/gender.png')}}"
                   alt="..."
+                  width="400"
+                  
               />
               </a>
-              <div class="portfolio-caption">
-                <div class="portfolio-caption-heading">Scatter Plot</div>
-                <div class="portfolio-caption-subheading text-muted">
-                  Dig Deeper
-                </div>
-              </div>
             </div>
           </div>
           <div class="col-lg-4 col-sm-6">
@@ -225,20 +205,17 @@
                 href="#portfolioModal6"
               >
               <img
-                  class="img-fluid"
-                  src="{{ url_for('static', filename= 'assets/img/portfolio/age.png')}}"
-                  alt="..."
+              class="img-fluid middle_row"
+              src="{{ url_for('static', filename= 'assets/img/portfolio/educ.png')}}"
+              alt="..."
+              width="400"
+             
               />
               </a>
-              <div class="portfolio-caption">
-                <div class="portfolio-caption-heading">Line Chart</div>
-                <div class="portfolio-caption-subheading text-muted">
-                  Direction
-                </div>
-              </div>
             </div>
           </div>
         </div>
+      <br>
       </div>
     </section>
     <!-- About-->
@@ -284,7 +261,7 @@
               </div>
               <div class="timeline-body">
                 <p class="text-muted">
-                  Describe the sigmoid function model and add screen shots
+                  <h5>TensorFlow sigmoid function model was instantiated. The data was slip 75/25 into training and testing set. We use 3 hiddden layers. and returned an accuracy score of 86%.</h5>
                 </p>
               </div>
             </div>
@@ -304,7 +281,8 @@
               </div>
               <div class="timeline-body">
                 <p class="text-muted">
-                  Describe the regression model add screenshots
+                  <h5>The logistic regression model was chosen as a supervised machine learning model.The data was split 75/25 into training and testing data. The model was instantiated, the training data was fit into the model and a prediction was run on the testing data. 
+                    The model returned an accuracy score of 85.9287%.</h5>
                 </p>
               </div>
             </div>
@@ -324,7 +302,7 @@
               </div>
               <div class="timeline-body">
                 <p class="text-muted">
-                  Describe the process and add screenshots
+                  <h5>We build an original database with 22 features using CREATE TABLE and from there we select 10 features to include in the model and built a second table. We used connection and cursor methods in flask to link the table.</h5>
                 </p>
               </div>
             </div>
@@ -340,11 +318,11 @@
             <div class="timeline-panel">
               <div class="timeline-heading">
                 <h4>Step 4</h4>
-                <h4 class="subheading">Flask Routes</h4>
+                <h4 class="subheading">Flask Routes & HTML Edits</h4>
               </div>
               <div class="timeline-body">
                 <p class="text-muted">
-                  Buiding database routes to the html page, to the database and to model testing?
+                  <h5>Finaly, we built flask routes to the html homepage, to the database page and to model testing form on the webpage. We also edited and customized the page to out project.</h5>
                 </p>
               </div>
             </div>
@@ -372,12 +350,6 @@
             Please fill out the questionnaire below.
           </h3>
         </div>
-        <!-- * * * * * * * * * * * * * * *-->
-        <!-- * * SB Forms Contact Form * *-->
-        <!-- * * * * * * * * * * * * * * *-->
-        <!-- This form is pre-integrated with SB Forms.-->
-        <!-- To make this form functional, sign up at-->
-        <!-- https://startbootstrap.com/solution/contact-forms-->
         <!-- to get an API token!-->
         <form action="/test" method="POST">
           <div class="row align-items-stretch mb-5">
@@ -400,7 +372,7 @@
               <div class="timeline-panel">
                 <div class="timeline-body">
                   <p class="text-muted">
-                    Does the patient have high cholesterol ? (Yes = 1, No = 0)
+                    Has the the patient had their cholesterol Checked in the last 5 years? (Yes = 1, No = 0)
                   </p>
                 </div>
               </div>
@@ -430,7 +402,7 @@
               <div class="timeline-panel">
                 <div class="timeline-body">
                   <p class="text-muted">
-                    Has the patient had a stroke? (Yes = 1, No = 0)
+                    Has the patient had a stroke in the? (Yes = 1, No = 0)
                   </p>
                 </div>
               </div>
@@ -445,7 +417,7 @@
               <div class="timeline-panel">
                 <div class="timeline-body">
                   <p class="text-muted">
-                    Does the patient exersise regularly? (Yes = 1, No = 0)
+                    Does the patient exersise weekly? (Yes = 1, No = 0)
                   </p>
                 </div>
               </div>
@@ -477,7 +449,7 @@
               <div class="timeline-panel">
                 <div class="timeline-body">
                   <p class="text-muted">
-                    Is the patient male of female? (male = 1, female = 2)
+                    Is the patient male of female? (male = 1, female = 0)
                   </p>
                 </div>
               </div>
@@ -552,6 +524,7 @@
           </div>
         </form>
       </div>
+    </div>
     </section>
     <!-- Team-->
     <section class="page-section bg-light" id="team">
@@ -614,28 +587,10 @@
         </div>
       </div>
     </footer>
-    <!-- Portfolio Modals-->
-    <!-- Portfolio item 1 modal popup-->
-   
-    <!-- Portfolio item 2 modal popup-->
-   
-    <!-- Portfolio item 3 modal popup-->
-    
-    <!-- Portfolio item 4 modal popup-->
- 
-    <!-- Portfolio item 5 modal popup-->
-    
-    <!-- Portfolio item 6 modal popup-->
-    
     <!-- Bootstrap core JS-->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
     <!-- Core theme JS-->
     <script src="{{ url_for('static', filename= 'js/scripts.js')}}"></script>
-
-    <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *-->
-    <!-- * *                               SB Forms JS                               * *-->
-    <!-- * * Activate your form at https://startbootstrap.com/solution/contact-forms * *-->
-    <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *-->
     
   </body>
 </html>
