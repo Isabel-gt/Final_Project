@@ -10,25 +10,25 @@
 
 # Using Health Indicators to Predict Diabetes
 
-Technologies:  Python 3.9.12 | Javascript | HTML | Form & Postman | Flask | Tableau | Matplotlib |hvplot | SQLite3 | Google Collab
+Technologies:  Python 3.9.12 | Javascript | HTML | Form & Postman | Flask | Tableau | Matplotlib | hvplot | SQLite3 | Google Collab
 
 ## Table of contents
 
 Introduction
 
-Method
+Method & Model
 
 Exploratory Analysis
 
-Model
-
-Future Considerations
+Future Analysis
 
 Set Backs
 
 Limitations
 
 Conclusion
+
+Next Steps
 
 References
 
@@ -46,10 +46,14 @@ Before we were able to work with the dataset, we had to label the categories in 
 
 It was felt that a supervised machine learning was the best approach to classify and predict diabetes.  We used the tensorflow deep learning module. To compare for accuracy, we used the random forest method for this prediction.  We then began to build the webpage using HTML, Javascript, and Flask. 
 
+We chose a template from Start Bootstrap and worked on editing and customizing it. We built 2 databases using sqlite, one with all the data and one with only 10 features. We used python in vs code and jupyter notebook to build, and train the models and for vizualization charts as well. Finally, we built flask routes to the html, the database and the machine learning model in order to facilitate testing and demostration.
+
  ### Database
 
-During the completion of the Diabetes Prediction project, a goal was to create a database based on a dataset from the website Kaggle. This dataset was        
-downloaded as a CSV file called diabetes.csv. The database was created using Python in two different files. In the first file, an empty table named diabetesTable3 was made using sqlite3. This table contained the features and the target column names. In the second Python file, the data from the diabetes.csv file was loaded into the table, which results in the complete database; this is then stored under the name diabetes3.db. 
+During the completion of the Diabetes Prediction project, a goal was to create a database based on a dataset from the website Kaggle. This dataset was   downloaded as a CSV file called diabetes.csv. The database was created using Python in two different files. In the first file, an empty table named diabetesTable3 was made using sqlite3. This table contained the features and the target column names. In the second Python file, the data from the diabetes.csv file was loaded into the table, which results in the complete database; this is then stored under the name diabetes3.db. 
+
+<img width="695" alt="3 (1)" src="https://user-images.githubusercontent.com/111452227/220824728-c38a8ae0-aa86-416b-95b0-2db52956fdb1.png">
+
 
 ### HTML and Flask
 
@@ -72,14 +76,23 @@ The next step is to train the model using the training dataset and evaluate its 
 The project also utilizes a deep learning approach using TensorFlow's deep neural network (DNN) module. The DNN model consists of multiple layers of interconnected neurons that use nonlinear activation functions to learn complex relationships between the features and labels.
 The DNN model is trained using the same preprocessed dataset and evaluated using the same performance metrics. The project compares the performance of the logistic regression and DNN models and shows that the DNN model outperforms the logistic regression model in terms of accuracy and F1 score.
 In conclusion, the diabetes prediction project using TensorFlow deep learning module and logistic regression is an effective approach to predict the onset of diabetes in patients using demographic and health-related features. The project demonstrates the advantages of using a deep learning approach over traditional logistic regression, highlighting the importance of choosing the right machine learning model for a given task
+
+<img width="616" alt="image" src="https://user-images.githubusercontent.com/111452227/220824949-1aaf01e1-d1ef-4488-a829-10d19e7ad19e.png">
+
+In conclusion, the diabetes prediction project using TensorFlow deep learning module and logistic regression is an effective approach to predict the onset of diabetes in patients using demographic and health-related features. The project demonstrates the advantages of using a deep learning approach over traditional logistic regression, highlighting the importance of choosing the right machine learning model for a given task
   
 ## Analysis
 
 Accuracy = 86%
 Outcomes:  0= No diabetes, 1= diabetes or prediabetes
 
+<img width="538" alt="image" src="https://user-images.githubusercontent.com/111452227/220826340-aed57cd0-69ea-4184-b0d0-38f861b76736.png">
+
 ![image](https://user-images.githubusercontent.com/111452227/220792974-342680a3-3b14-4f56-99a6-d6bd79b6fd19.png)
 
+Heat Map (22 variables)
+
+<img width="597" alt="image" src="https://user-images.githubusercontent.com/111452227/220826003-2872b747-21c0-448c-8aea-148670cff81e.png">
 
 Heat Map (10 variables)
 
@@ -89,11 +102,27 @@ High Blood Pressure, Cholesterol Check, Stroke
 
 <img width="927" alt="HBP_CC_Stroke" src="https://user-images.githubusercontent.com/111452227/220823826-871b2bab-778c-4ad4-a3ad-86f32aa09e28.png">
 
+Gender
+
+<img width="506" alt="image" src="https://user-images.githubusercontent.com/111452227/220825778-820894fe-118a-4f47-bcc9-1cde9796dc97.png">
+
 No Doctor Visit Due to Cost
+
+<img width="369" alt="image" src="https://user-images.githubusercontent.com/111452227/220825633-85a26753-2128-46a4-92f7-7d405bc84f69.png">
+
+Physical Activity vs BMI
 
 <img width="808" alt="github_doctor" src="https://user-images.githubusercontent.com/111452227/220824397-216d7531-7794-47eb-9355-322d3b247278.png">
 
 
+
+Age
+
+<img width="749" alt="image" src="https://user-images.githubusercontent.com/111452227/220825690-8b5fc36e-9140-40fd-b53a-4b10537583f0.png">
+
+Education
+
+<img width="792" alt="image" src="https://user-images.githubusercontent.com/111452227/220825732-ae7fae37-239f-4cf1-b32a-61150d4a5e31.png">
 
 ## Future Analysis
 
@@ -108,7 +137,6 @@ Heart Disease or Heart Attack
 Difficulty Walking
 
 ![image](https://user-images.githubusercontent.com/111452227/220824169-34114e7c-0e3d-456c-957f-b6c109154d96.png)
-
 
 
 ## Set backs
@@ -150,17 +178,9 @@ Additional analysis on heart disease, income, and alcohol consumption.
 
 Future use of our deep learning and logistic classification models to triage centers in emergency rooms. 
 
-
-
-
 ## References
 
- GitHub
- Stack Overflow
- Scikitlearn
- Numpy & python documentation
- Pubmed
- CDC
+ GitHub | Stack Overflow |Scikitlearn |Numpy & python documentation | Pubmed | CDC
 
 
 
