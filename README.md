@@ -20,7 +20,7 @@ Method
 
 Exploratory Analysis
 
-Results/Model
+Model
 
 Set Backs
 
@@ -59,6 +59,8 @@ To access the database, a button was included in the index.html file. This butto
 
 Finally, one more goal that needed to be reached was to create a third HTML file that would display the results of the diabetes prediction. The HTML file was called test. This ended up being a limitation since this objective was not reached due to the difficulty of connecting the route from the Flask app to the third HTML.
 
+<img width="960" alt="image" src="https://user-images.githubusercontent.com/111452227/220792388-df812ddf-a648-420b-8750-5decc54f9da5.png">
+
 
 ### Machine Learning
 
@@ -71,19 +73,18 @@ The project also utilizes a deep learning approach using TensorFlow's deep neura
 The DNN model is trained using the same preprocessed dataset and evaluated using the same performance metrics. The project compares the performance of the logistic regression and DNN models and shows that the DNN model outperforms the logistic regression model in terms of accuracy and F1 score.
 In conclusion, the diabetes prediction project using TensorFlow deep learning module and logistic regression is an effective approach to predict the onset of diabetes in patients using demographic and health-related features. The project demonstrates the advantages of using a deep learning approach over traditional logistic regression, highlighting the importance of choosing the right machine learning model for a given task
   
-## Results 
+## Analysis
 
 Accuracy = 86%
 Outcomes:  0= No diabetes, 1= diabetes or prediabetes
 
-<img width="506" alt="image" src="https://user-images.githubusercontent.com/111452227/219551735-007f4bda-6a51-419e-8e80-566625b1d918.png">
+![image](https://user-images.githubusercontent.com/111452227/220792974-342680a3-3b14-4f56-99a6-d6bd79b6fd19.png)
 
 
-### Charts and Visuals
+Heat Map (10 variables)
 
-High Blood Pressure
+![image](https://user-images.githubusercontent.com/111452227/220793032-5b9c1e38-3add-44fc-95d4-3e1473e868aa.png)
 
-<img width="622" alt="image" src="https://user-images.githubusercontent.com/111452227/219551777-0a520155-ce31-4c71-a4c2-e4c814d4722a.png">
 
 High Cholesterol
 
