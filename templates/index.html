@@ -1,0 +1,596 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <meta name="description" content="" />
+    <meta name="author" content="" />
+    <title>Agency - Start Bootstrap Theme</title>
+    <!-- Favicon-->
+    <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
+    <!-- Font Awesome icons (free version)-->
+    <script
+      src="https://use.fontawesome.com/releases/v6.1.0/js/all.js"
+      crossorigin="anonymous"
+    ></script>
+    <!-- Google fonts-->
+    <link
+      href="https://fonts.googleapis.com/css?family=Montserrat:400,700"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <!-- Core theme CSS (includes Bootstrap)-->
+    <link href="{{ url_for('static', filename= 'css/styles.css')}}" rel="stylesheet" />
+  </head>
+  <body id="page-top">
+    <!-- Navigation-->
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNav">
+      <div class="container">
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+          <ul class="navbar-nav text-uppercase ms-auto py-4 py-lg-0">
+            <li class="nav-item">
+              <a class="nav-link" href="#services">Introduction</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#portfolio">Visualizations</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#about">Database & Models</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#contact">Model Testing</a>
+            <li class="nav-item"><a class="nav-link" href="#team">Team</a></li>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <!-- Masthead-->
+    <header class="masthead">
+      <div class="container">
+        <div class="masthead-subheading">Diabetes Diagnosis Predictions</div>
+        <div class="masthead-heading text-uppercase">
+          Machine Learning In Medicine
+        </div>
+        <a class="btn btn-primary btn-xl text-uppercase" href="#services"
+          >Tell Me More</a
+        >
+      </div>
+    </header>
+    <!-- Services-->
+    <section class="page-section" id="services">
+      <div class="container">
+        <div class="text-center">
+          <h2 class="section-heading text-uppercase">Introduction</h2>
+          <h3 class="section-subheading text-muted">
+            <h6>Our project focus on using machine learning to pre diagnose patients who might be at risk of diabetes since the disease can lead to serious complications such as heart disease, vision loss, lower-limb amputation and kidney disease. The predictions can assist clinicians formulate a In this project, we intend to use supervised machine learning (classification)to predict diabetes or no diabetes.</h6>
+          </h3>
+        </div>
+        <div class="row text-center">
+          <div class="col-md-4">
+            <h4 class="my-3">Method</h4>
+            <p class="text-muted">
+              We selected a dataset from the Kaggle webpage and decided to use Flask and HTML to build a web page to channel and test the machine learning model. We chose a template from Start Bootstrap and worked on editing and customizing it. We built 2 databases using sqlite, one with all the data and one with only 10 features. We used python in vs code and jupyter notebook to build, and train the models and for vizualization charts as well. Finally, we built flask routes to the html, the database and the machine learning model in order to facilitate testing and demostration.
+            </p>
+          </div>
+          <div class="col-md-4">
+            <h4 class="my-3">Dataset Choice</h4>
+            <p class="text-muted">
+              We used the Diabetes Health Indicators Dataset from 2015 provided by Kaggle. The dataset was obtained by surveying hundreds of thousands of Americans for diabetes or prediabetes predictors with The Behavioral Risk Factor Surveillance System (BRFSS). We decided to explore 10 of the 22 variables for our prediction; education, age, high BP, gender, BMI, cholesterol check, no doctor because of cost, stroke, smoker, physical activity.
+            </p>
+          </div>
+          <div class="col-md-4">
+            <h4 class="my-3">Model Evaluation</h4>
+            <p class="text-muted">
+              The project evaluated a deep learning approach using TensorFlow's deep neural network (DNN) module.The model consists of an input layer, a dense layer with sigmoid activation function, and an output layer. We also evaluated using the logistic regression model as a supervised machine learning model that classify the predictions into binary outcomes. We performed a feature importance on the original dataset in order to rank the features and how they affect the model.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Portfolio Grid-->
+    <section class="page-section bg-light" id="portfolio">
+      <div class="container">
+        <div class="text-center">
+          <h2 class="section-heading text-uppercase">Visualizations</h2>
+          <h3 class="section-subheading text-muted">
+            This section provide more insights into the data.
+          </h3>
+        </div>
+        <div class="row">
+          <div class="col-lg-4 col-sm-6 mb-4">
+            <!-- Portfolio item 1-->
+            <div class="portfolio-item">
+              <a
+                class="portfolio-link"
+                data-bs-toggle="modal"
+                href="#portfolioModal1"
+              >
+              <img
+                  class="img-fluid top_row"
+                  src="{{ url_for('static', filename= 'assets/img/portfolio/dnd.png')}}"
+                  alt="..."
+                  width="400"
+                  
+                />
+              </a>
+            </div>
+          </div>
+          <div class="col-lg-4 col-sm-6 mb-4">
+            <!-- Portfolio item 2-->
+            <div class="portfolio-item">
+              <a
+                class="portfolio-link"
+                data-bs-toggle="modal"
+                href="#portfolioModal2"
+              >
+              <img
+                  class="img-fluid top_row"
+                  src="{{ url_for('static', filename= 'assets/img/portfolio/hbp.png')}}"
+                  alt="..."
+                  width="400"
+                  
+              />
+              </a>
+            </div>
+          </div>
+          <div class="col-lg-4 col-sm-6 mb-4">
+            <!-- Portfolio item 3-->
+            <div class="portfolio-item">
+              <a
+                class="portfolio-link"
+                data-bs-toggle="modal"
+                href="#portfolioModal3"
+              >
+              <img
+                  class="img-fluid top_row"
+                  src="{{ url_for('static', filename= 'assets/img/portfolio/hcb.png')}}"
+                  alt="..."
+                  width="400"
+                  
+              />
+              </a>
+            </div>
+          </div>
+          <div class="col-lg-4 col-sm-6 mb-4 mb-lg-0">
+            <!-- Portfolio item 4-->
+            <div class="portfolio-item">
+              <a
+                class="portfolio-link"
+                data-bs-toggle="modal"
+                href="#portfolioModal4"
+              >
+              <img
+                  class="img-fluid middle_row"
+                  src="{{ url_for('static', filename= 'assets/img/portfolio/heat10.png')}}"
+                  alt="..."
+                  width="400"
+                  
+              />
+              </a>
+            </div>
+          </div>
+          <div class="col-lg-4 col-sm-6 mb-4 mb-sm-0">
+            <!-- Portfolio item 5-->
+            <div class="portfolio-item">
+              <a
+                class="portfolio-link"
+                data-bs-toggle="modal"
+                href="#portfolioModal5"
+              >
+              <img
+                  class="img-fluid middle_row"
+                  src="{{ url_for('static', filename= 'assets/img/portfolio/gender.png')}}"
+                  alt="..."
+                  width="400"
+                  
+              />
+              </a>
+            </div>
+          </div>
+          <div class="col-lg-4 col-sm-6">
+            <!-- Portfolio item 6-->
+            <div class="portfolio-item">
+              <a
+                class="portfolio-link"
+                data-bs-toggle="modal"
+                href="#portfolioModal6"
+              >
+              <img
+              class="img-fluid middle_row"
+              src="{{ url_for('static', filename= 'assets/img/portfolio/educ.png')}}"
+              alt="..."
+              width="400"
+             
+              />
+              </a>
+            </div>
+          </div>
+        </div>
+      <br>
+      </div>
+    </section>
+    <!-- About-->
+    <section class="page-section" id="about">
+      <div class="container">
+        <div class="text-center">
+          <h2 class="section-heading text-uppercase">Database</h2>
+          <h3 class="section-subheading text-muted">
+              If you would like to find out which database was selected to make the diabetes predictions click the button below.
+          </h3>
+      </div>
+      <form action="/add_database" method="POST">
+        <div class="text-center">
+            <button 
+              class="btn-large waves-effect waves-light-orange"
+              id="database"
+            >
+            <a href="database">Diabetes Database</a>
+            </button>
+        </div>
+      </form>
+      <div class="container">
+        <div class="text-center">
+          <h2 class="section-heading text-uppercase">Model Selection</h2>
+          <h3 class="section-subheading text-muted">
+            This section evaluate which machine learning model provide the best
+            accuracy. Ideal picture screenshot or chart below.
+          </h3>
+        </div>
+        <ul class="timeline">
+          <li>
+            <div class="timeline-image">
+              <img
+                class="rounded-circle img-fluid"
+                src="{{ url_for('static', filename= 'assets/img/about/1.jpg')}}"
+                alt="..."
+              />
+            </div>
+            <div class="timeline-panel">
+              <div class="timeline-heading">
+                <h4>Step 1</h4>
+                <h4 class="subheading">Deep Learning</h4>
+              </div>
+              <div class="timeline-body">
+                <p class="text-muted">
+                  <h5>TensorFlow sigmoid function model was instantiated. The data was slip 75/25 into training and testing set. We use 3 hiddden layers. and returned an accuracy score of 86%.</h5>
+                </p>
+              </div>
+            </div>
+          </li>
+          <li class="timeline-inverted">
+            <div class="timeline-image">
+              <img
+                class="rounded-circle img-fluid"
+                src="{{ url_for('static', filename= 'assets/img/about/2.jpg')}}"
+                alt="..."
+              />
+            </div>
+            <div class="timeline-panel">
+              <div class="timeline-heading">
+                <h4>Step 2</h4>
+                <h4 class="subheading">Logistic Regression</h4>
+              </div>
+              <div class="timeline-body">
+                <p class="text-muted">
+                  <h5>The logistic regression model was chosen as a supervised machine learning model.The data was split 75/25 into training and testing data. The model was instantiated, the training data was fit into the model and a prediction was run on the testing data. 
+                    The model returned an accuracy score of 85.9287%.</h5>
+                </p>
+              </div>
+            </div>
+          </li>
+          <li>
+            <div class="timeline-image">
+              <img
+                class="rounded-circle img-fluid"
+                src="{{ url_for('static', filename= 'assets/img/about/3.jpg')}}"
+                alt="..."
+              />
+            </div>
+            <div class="timeline-panel">
+              <div class="timeline-heading">
+                <h4>Step 3</h4>
+                <h4 class="subheading">Sqlite Databases</h4>
+              </div>
+              <div class="timeline-body">
+                <p class="text-muted">
+                  <h5>We build an original database with 22 features using CREATE TABLE and from there we select 10 features to include in the model and built a second table. We used connection and cursor methods in flask to link the table.</h5>
+                </p>
+              </div>
+            </div>
+          </li>
+          <li class="timeline-inverted">
+            <div class="timeline-image">
+              <img
+                class="rounded-circle img-fluid"
+                src="{{ url_for('static', filename= 'assets/img/about/4.jpg')}}"
+                alt="..."
+              />
+            </div>
+            <div class="timeline-panel">
+              <div class="timeline-heading">
+                <h4>Step 4</h4>
+                <h4 class="subheading">Flask Routes & HTML Edits</h4>
+              </div>
+              <div class="timeline-body">
+                <p class="text-muted">
+                  <h5>Finaly, we built flask routes to the html homepage, to the database page and to model testing form on the webpage. We also edited and customized the page to out project.</h5>
+                </p>
+              </div>
+            </div>
+          </li>
+          <li class="timeline-inverted">
+            <div class="timeline-image">
+              <h4>
+                Logistic
+                <br />
+                Model
+                <br />
+                Testing!
+              </h4>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </section>
+    <!-- Contact-->
+    <section class="page-section" id="contact">
+      <div class="container">
+        <div class="text-center">
+          <h2 class="section-heading text-uppercase">New Patient</h2>
+          <h3 class="section-subheading text-muted">
+            Please fill out the questionnaire below.
+          </h3>
+        </div>
+        <!-- to get an API token!-->
+        <form action="/test" method="POST">
+          <div class="row align-items-stretch mb-5">
+            <div class="col-md-6">
+              <div class="timeline-panel">
+                <div class="timeline-body">
+                  <p class="text-muted">
+                    Does the patient have high blood pressure ? (Yes = 1, No = 0)
+                  </p>
+                </div>
+              </div>
+              <div class="form-group">
+                <!-- Name input-->
+                <input
+                  name="validate"
+                  id="name"
+                  type="text"                
+                />
+              </div>
+              <div class="timeline-panel">
+                <div class="timeline-body">
+                  <p class="text-muted">
+                    Has the the patient had their cholesterol Checked in the last 5 years? (Yes = 1, No = 0)
+                  </p>
+                </div>
+              </div>
+              <div class="form-group">
+                <!-- Name input-->
+                <input
+                  name="validate"
+                  id="name"
+                  type="text"                
+                />
+              </div>
+              <div class="timeline-panel">
+                <div class="timeline-body">
+                  <p class="text-muted">
+                    Does the patient smoke ? (Yes = 1, No = 0)
+                  </p>
+                </div>
+              </div>
+              <div class="form-group">
+                <!-- Name input-->
+                <input
+                  name="validate"
+                  id="name"
+                  type="text"                
+                />
+              </div>
+              <div class="timeline-panel">
+                <div class="timeline-body">
+                  <p class="text-muted">
+                    Has the patient had a stroke in the? (Yes = 1, No = 0)
+                  </p>
+                </div>
+              </div>
+              <div class="form-group">
+                <!-- Name input-->
+                <input
+                  name="validate"
+                  id="name"
+                  type="text"                
+                />
+              </div>
+              <div class="timeline-panel">
+                <div class="timeline-body">
+                  <p class="text-muted">
+                    Does the patient exersise weekly? (Yes = 1, No = 0)
+                  </p>
+                </div>
+              </div>
+              <div class="form-group">
+                <!-- Name input-->
+                <input
+                  name="validate"
+                  id="name"
+                  type="text"                
+                />
+              </div>
+            </div>
+            <div class="col-md-6">
+              <div class="timeline-panel">
+                <div class="timeline-body">
+                  <p class="text-muted">
+                    Does the patient lack primary care doctor due to cost? (Yes = 1, No = 0)
+                  </p>
+                </div>
+              </div>
+              <div class="form-group">
+                <!-- Name input-->
+                <input
+                  name="validate"
+                  id="name"
+                  type="text"                
+                />
+              </div>
+              <div class="timeline-panel">
+                <div class="timeline-body">
+                  <p class="text-muted">
+                    Is the patient male of female? (male = 1, female = 0)
+                  </p>
+                </div>
+              </div>
+              <div class="form-group">
+                <!-- Name input-->
+                <input
+                  name="validate"
+                  id="name"
+                  type="text"                
+                />
+              </div>
+              <div class="timeline-panel">
+                <div class="timeline-body">
+                  <p class="text-muted">
+                    What is the patient BMI? (Range from 12 to 98)                 
+                  </p>
+                </div>
+              </div>
+              <div class="form-group">
+                <!-- Name input-->
+                <input
+                    name="validate"
+                    id="name"
+                    type="text"                
+                />
+              </div>
+              <div class="timeline-panel">
+                <div class="timeline-body">
+                  <p class="text-muted">
+                      What is the patient age? Use reference table for age ranges
+                  </p>
+                </div>
+              </div>
+              <div class="form-group">
+                  <!-- Name input-->
+                  <input
+                    name="validate"
+                    id="name"
+                    type="text"                
+                  />
+              </div>
+              <div class="timeline-panel">
+                <div class="timeline-body">
+                  <p class="text-muted">
+                      What is the patient education level? See chart for reference...
+                  </p>
+                </div>
+              </div>
+              <div class="form-group">
+                  <!-- Name input-->
+                  <input
+                      name="validate"
+                      id="name"
+                      type="text"                
+                  />
+                </div>
+              </div>     
+            </div>
+            </div>
+          </div>
+          <!-- Submit Button-->
+          <!-- Submit Button-->
+          
+          <div class="text-center">
+            <button
+              class="btn-large waves-effect waves-light-orange"
+              id="submitButton"
+              type="submit"
+            >
+              Predict Diagnosis
+            </button>
+          </div>
+        </form>
+      </div>
+    </div>
+    </section>
+    <!-- Team-->
+    <section class="page-section bg-light" id="team">
+      <div class="container">
+        <div class="text-center">
+          <h2 class="section-heading text-uppercase"> Data Ninjas Team</h2>
+          <h3 class="section-subheading text-muted">
+            Describe the process
+          </h3>
+        </div>
+        <div class="row">
+          <div class="col-lg-4">
+            <div class="team-member">
+              <h4>Jack</h4>
+            </div>
+          </div>
+          <div class="col-lg-4">
+            <div class="team-member">
+              <h4>Isabel</h4>
+            </div>
+          </div>
+          <div class="col-lg-4">
+            <div class="team-member">
+              <h4>Garima</h4>
+            </div>
+          </div>
+          <div class="col-lg-4">
+            <div class="team-member">
+              <h4>Noemi</h4>
+            </div>
+          </div>
+          <div class="col-lg-4">
+            <div class="team-member">
+              <h4>Gretta</h4>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-lg-8 mx-auto text-center">
+            <p class="large text-muted">
+              Thank you to each of you for your immense contribution.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Footer-->
+    <footer class="footer py-4">
+      <div class="container">
+        <div class="row align-items-center">
+          <div class="col-lg-4 text-lg-start">
+            Copyright &copy; Start bootstrap
+          </div>
+          <div class="col-lg-4 text-lg-end">
+            <a class="link-dark text-decoration-none me-3" href="#!"
+              >Privacy Policy</a
+            >
+            <a class="link-dark text-decoration-none" href="#!">Terms of Use</a>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!-- Bootstrap core JS-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Core theme JS-->
+    <script src="{{ url_for('static', filename= 'js/scripts.js')}}"></script>
+    
+  </body>
+</html>
